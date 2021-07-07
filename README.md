@@ -1,23 +1,21 @@
 # 2deg_billiard_matlab
 
 ## Introduction
-This is the summer internship project under the supervision of Dr. Martin Richter, University of Nottingham.
+This is a funded summer internship project under the supervision of Dr. Martin Richter, University of Nottingham.
 
-**Title**: Transfer Operator Methods - Transport 2d Electron Gases
+**Title**: Transfer operator for the standard map
 
-**Background**: Transfer operator methods have been proven successful in a range of industrial applications concerned with vibrational energy distribution in the high-frequency regime using a method called Dynamical Energy Analysis. Here, we apply the same techniques on the classical orbits of electrons.
-The motivation for this research are transport phenomena which show surprising features in resistances between point contacts. While we will focus on the mathematical foundations of the theory, there is potential to compare to actual measured data.
+**Supervisor**: Dr Martin Richter
 
-**Project Description**: Aim of this project is to derive a formula for the electronic transport in a so called two-dimensional electron gas (2DEG). These are specifically designed interfaces between semiconductors in which electrons are restricted to two dimensions. By applying voltages to a top contact, the area of movement can be freely designed. This is the fundamental concept of so called MOSFET transistors ubiquitious in nowadays electronics.
+**Research themes**: nonlinear dynamics; chaos; linear operators
 
-From a dynamical systems point of view, interesting phenomena can arise when the geometry or other parameters, like a perpendicular magnetic field, are changed. They lead to bifurcations and a generic KAM route to chaos thereby highly influencing the transport properties.
+This project focuses on dynamical systems like known from lectures about Hamiltonian Dynamics. Instead of propagating single trajectories, we will consider densities of initial conditions and ask who these densities evolve with time. The object of interest is the so called Transfer Operator, or Frobenius Perron Operator which governs how densities are evolving.  As part of this project, you will have to express this operator in a suitable function basis. As a model for the dynamics, we will focus on one of the most widely studied toy models, the so called Standard Map. Its main advantage is its computational simplicity despite the richness of effects it can show: A simple parameter allows to tune the behaviour from completely regular over a mixed-phase space where chaotic and integrable dynamics coincide to a fully chaotic behaviour. Using the derived transfer operator, you will investigate how a numerical scheme based on a finite number of basis functions behaves. More precisely, you will investigate how error rates decay compared with expected rates derived in another context.
 
-In this project, your task will be to solve the equations of motion in presence of a magnetic field. Then, a so called Poincaré Section (also called Boundary map in Birkhoff coordinates) can be defined. Using this, your task is to create a transfer operator to allow for the propagation of densities of initial conditions.
-This transfer operator arises from the equations of motion and can be expressed as an integral over initial conditions.
+**References**:
++ Cvitanovic, Predrag, et al. "Chaos: classical and quantum." ChaosBook. org (Niels Bohr Institute, Copenhagen 2005) 69 (2005): 25.
++ Bøggild, Peter, A. Kristensen, and Poul Erik Lindelof. "Magnetic focusing in triangular electron billiards." Physical Review B 59.20 (1999): 13067.
 
-
-
-## Kicked system
+## Kicked system: a brief introduction
 
 This is a visualization of standard map with different value of K for Kicked Hamiltonian.
 
