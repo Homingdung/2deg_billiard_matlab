@@ -24,47 +24,37 @@ $\theta_{n+1}=\theta_n+\pi p_n$
 
 $p_{n+1}=p_n+\frac{K}{\pi}sin(\theta_n+\pi p_n)$
 
-![sm1](/Users/peter/Desktop/2deg_billiard_matlab/graphs/sm1.gif)
+![sm1](https://github.com/Peter3822724/2deg_billiard_matlab/blob/main/graphs/sm1.gif)
+
+
+![sm2](https://github.com/Peter3822724/2deg_billiard_matlab/blob/main/graphs/sm2.gif)
+
+![sm4](https://github.com/Peter3822724/2deg_billiard_matlab/blob/main/graphs/sm4.gif)
+
+![sm5](https://github.com/Peter3822724/2deg_billiard_matlab/blob/main/graphs/sm5.gif)
 
 
 
-
-
-
-![sm2](/Users/peter/Desktop/2deg_billiard_matlab/graphs/sm2.gif)
-
-
-
-![sm4](/Users/peter/Desktop/2deg_billiard_matlab/graphs/sm4.gif)
-
-
-
-![sm5](/Users/peter/Desktop/2deg_billiard_matlab/graphs/sm5.gif)
-
-
-
-![sm6](/Users/peter/Desktop/2deg_billiard_matlab/graphs/sm6.gif)
-
-
+![sm6](https://github.com/Peter3822724/2deg_billiard_matlab/blob/main/graphs/sm6.gif)
 
 More pictures are shown here:
 
 
-![sm1](/Users/peter/Desktop/2deg_billiard_matlab/graphs/sm1.png)
+![sm1](https://github.com/Peter3822724/2deg_billiard_matlab/blob/main/graphs/sm1.png)
 
 
 
-![sm2](/Users/peter/Desktop/2deg_billiard_matlab/graphs/sm2.png)
+![sm2](https://github.com/Peter3822724/2deg_billiard_matlab/blob/main/graphs/sm2.png)
 
 
 
-![sm3](/Users/peter/Desktop/2deg_billiard_matlab/graphs/sm3.png)
+![sm3](https://github.com/Peter3822724/2deg_billiard_matlab/blob/main/graphs/sm3.png)
 
-![sm4](/Users/peter/Desktop/2deg_billiard_matlab/graphs/sm4.png)
+![sm4](https://github.com/Peter3822724/2deg_billiard_matlab/blob/main/graphs/sm4.png)
 
-![sm5](/Users/peter/Desktop/2deg_billiard_matlab/graphs/sm5.png)
+![sm5](https://github.com/Peter3822724/2deg_billiard_matlab/blob/main/graphs/sm5.png)
 
-![sm6](/Users/peter/Desktop/2deg_billiard_matlab/graphs/sm6.png)
+![sm6](https://github.com/Peter3822724/2deg_billiard_matlab/blob/main/graphs/sm6.png)
 
 ### Inverse mapping under certain density function
 
