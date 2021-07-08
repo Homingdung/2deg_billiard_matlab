@@ -24,47 +24,47 @@ $\theta_{n+1}=\theta_n+\pi p_n$
 
 $p_{n+1}=p_n+\frac{K}{pi}sin(\theta_n+\pi p_n)$
 
-
-
-![sm1](/Users/peter/Desktop/申研材料/项目成果汇总/科研2动力系统/standard_map/sm1.gif)
-
+![sm1](/Users/peter/Desktop/2deg_billiard_matlab/graphs/sm1.gif)
 
 
 
-![sm2](/Users/peter/Desktop/申研材料/项目成果汇总/科研2动力系统/standard_map/sm2.gif)
 
 
 
-![sm4](/Users/peter/Desktop/申研材料/项目成果汇总/科研2动力系统/standard_map/sm4.gif)
+![sm2](/Users/peter/Desktop/2deg_billiard_matlab/graphs/sm2.gif)
 
 
 
-![sm5](/Users/peter/Desktop/申研材料/项目成果汇总/科研2动力系统/standard_map/sm5.gif)
+![sm4](/Users/peter/Desktop/2deg_billiard_matlab/graphs/sm4.gif)
 
 
 
-![sm6](/Users/peter/Desktop/申研材料/项目成果汇总/科研2动力系统/standard_map/sm6.gif)
+![sm5](/Users/peter/Desktop/2deg_billiard_matlab/graphs/sm5.gif)
+
+
+
+![sm6](/Users/peter/Desktop/2deg_billiard_matlab/graphs/sm6.gif)
 
 
 
 More pictures are shown here:
 
-![sm1](/Users/peter/Desktop/申研材料/项目成果汇总/科研2动力系统/standard_map/sm1.png)
-![sm2](/Users/peter/Desktop/申研材料/项目成果汇总/科研2动力系统/standard_map/sm2.png)
+
+![sm1](/Users/peter/Desktop/2deg_billiard_matlab/graphs/sm1.png)
 
 
 
-![sm3](/Users/peter/Desktop/申研材料/项目成果汇总/科研2动力系统/standard_map/sm3.png)
-
-![sm4](/Users/peter/Desktop/申研材料/项目成果汇总/科研2动力系统/standard_map/sm4.png)
+![sm2](/Users/peter/Desktop/2deg_billiard_matlab/graphs/sm2.png)
 
 
 
-![sm5](/Users/peter/Desktop/申研材料/项目成果汇总/科研2动力系统/standard_map/sm5.png)
+![sm3](/Users/peter/Desktop/2deg_billiard_matlab/graphs/sm3.png)
 
-![sm6](/Users/peter/Desktop/申研材料/项目成果汇总/科研2动力系统/standard_map/sm6.png)
+![sm4](/Users/peter/Desktop/2deg_billiard_matlab/graphs/sm4.png)
 
+![sm5](/Users/peter/Desktop/2deg_billiard_matlab/graphs/sm5.png)
 
+![sm6](/Users/peter/Desktop/2deg_billiard_matlab/graphs/sm6.png)
 
 ### Inverse mapping under certain density function
 
@@ -85,20 +85,20 @@ $\theta_{n+1}=\theta_n-\pi(p_n-\frac{K}{\pi}sin(\theta_n))$
 The density function is shown as below:
 
 
-![density](/Users/peter/Desktop/申研材料/项目成果汇总/科研2动力系统/standard_map/density.png)
+![density](/Users/peter/Desktop/2deg_billiard_matlab/graphs/density.png)
 
 
 If we apply the inverse mapping for system for 20 times:
 
-![inverse_0.02](/Users/peter/Desktop/申研材料/项目成果汇总/科研2动力系统/standard_map/inverse_0.02.gif)
+![inverse_0.02](/Users/peter/Desktop/2deg_billiard_matlab/graphs/inverse_0.02.gif)
 
 
 
-![inverse_2.4](/Users/peter/Desktop/申研材料/项目成果汇总/科研2动力系统/standard_map/inverse_2.4.gif)
+![inverse_2.4](/Users/peter/Desktop/2deg_billiard_matlab/graphs/inverse_2.4.gif)
 
 
 
-![inverse_10](/Users/peter/Desktop/申研材料/项目成果汇总/科研2动力系统/standard_map/inverse_10.gif)
+![inverse_10](/Users/peter/Desktop/2deg_billiard_matlab/graphs/inverse_10.gif)
 
 
 
