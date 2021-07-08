@@ -75,20 +75,20 @@ $\theta_{n+1}=\theta_n-\pi(p_n-\frac{K}{\pi}sin(\theta_n))$
 The density function is shown as below:
 
 
-![density](/Users/peter/Desktop/2deg_billiard_matlab/graphs/density.png)
+![density](https://github.com/Peter3822724/2deg_billiard_matlab/blob/main/graphs/density.png)
 
 
 If we apply the inverse mapping for system for 20 times:
 
-![inverse_0.02](/Users/peter/Desktop/2deg_billiard_matlab/graphs/inverse_0.02.gif)
+![inverse_0.02](https://github.com/Peter3822724/2deg_billiard_matlab/blob/main/graphs/inverse_0.02.gif)
 
 
 
-![inverse_2.4](/Users/peter/Desktop/2deg_billiard_matlab/graphs/inverse_2.4.gif)
+![inverse_2.4](https://github.com/Peter3822724/2deg_billiard_matlab/blob/main/graphs/inverse_2.4.gif)
 
 
 
-![inverse_10](/Users/peter/Desktop/2deg_billiard_matlab/graphs/inverse_10.gif)
+![inverse_10](https://github.com/Peter3822724/2deg_billiard_matlab/blob/main/graphs/inverse_10.gif)
 
 
 
