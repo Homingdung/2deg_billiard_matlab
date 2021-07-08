@@ -20,11 +20,12 @@ This project focuses on dynamical systems like known from lectures about Hamilto
 ### Standard Map
 This is a visualization of standard map with different value of K for Kicked Hamiltonian.
 
+![kickedsystem](https://latex.codecogs.com/gif.latex?%5Ctheta_%7Bn&plus;1%7D%3D%5Ctheta_n&plus;%5Cpi%20p_n%20%5C%5C%20%5C%5C%20p_%7Bn&plus;1%7D%3Dp_n&plus;%5Cfrac%7BK%7D%7B%5Cpi%7Dsin%28%5Ctheta_n&plus;%5Cpi%20p_n%29)
 
-![sm1](https://user-images.githubusercontent.com/57780176/124786309-84454d00-df3f-11eb-9d7a-fe69200f7e0a.gif)
-![sm2](https://user-images.githubusercontent.com/57780176/124786337-8ad3c480-df3f-11eb-8386-ab938cebb52e.gif)
-![sm4](https://user-images.githubusercontent.com/57780176/124786408-98894a00-df3f-11eb-940f-8509dd04ae04.gif)
-![sm6](https://user-images.githubusercontent.com/57780176/124786474-a50da280-df3f-11eb-9b03-bc872552d51d.gif)
+
+
+
+![sm1](https://user-images.githubusercontent.com/57780176/124786309-84454d00-df3f-11eb-9d7a-fe69200f7e0a.gif)![sm2](https://user-images.githubusercontent.com/57780176/124786337-8ad3c480-df3f-11eb-8386-ab938cebb52e.gif)![sm4](https://user-images.githubusercontent.com/57780176/124786408-98894a00-df3f-11eb-940f-8509dd04ae04.gif)![sm6](https://user-images.githubusercontent.com/57780176/124786474-a50da280-df3f-11eb-9b03-bc872552d51d.gif)
 
 More pictures are shown here:
 
@@ -38,6 +39,13 @@ More pictures are shown here:
 ### Inverse mapping under certain density function
 
 For certain density function:
+
+![densityfunction](https://latex.codecogs.com/gif.latex?%5Crho%3A%5B0%2C2%5Cpi%5D%5Ctimes%28-1%2C1%29%5Cto%5B0%2C%5Cinfty%29%2C%20%5Crho%3Dsin%28%5Cfrac%7B%5Ctheta%7D%7B2%7D%29%5E%7B10%7Dcos%28%5Cfrac%7B%5Cpi%20p%7D%7B2%7D%29%5E%7B10%7D)
+
+The inverse mapping could be obtained as:
+
+![inversemapping](https://latex.codecogs.com/gif.latex?p_%7Bn&plus;1%7D%3Dp_n-%5Cfrac%7BK%7D%7B%5Cpi%7Dsin%28%5Ctheta_n%29%5C%5C%20%5Ctheta_%7Bn&plus;1%7D%3D%5Ctheta_n-%5Cpi%28p_n-%5Cfrac%7BK%7D%7B%5Cpi%7Dsin%28%5Ctheta_n%29%29)
+
 
 ![untitled](https://user-images.githubusercontent.com/57780176/124962595-b8d80800-e016-11eb-8675-c08e6cfbdc01.png)
 
