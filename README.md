@@ -17,6 +17,7 @@ This project focuses on dynamical systems like known from lectures about Hamilto
 
 ## Kicked system: a brief introduction
 
+### Standard Map
 This is a visualization of standard map with different value of K for Kicked Hamiltonian.
 
 
@@ -33,6 +34,21 @@ More pictures are shown here:
 ![sm4](https://user-images.githubusercontent.com/57780176/124787133-30873380-df40-11eb-937b-4024c49fe8ba.png)
 ![sm5](https://user-images.githubusercontent.com/57780176/124787138-3250f700-df40-11eb-8af3-7ba8df2ea139.png)
 ![sm6](https://user-images.githubusercontent.com/57780176/124787143-33822400-df40-11eb-84ce-29230d0231b3.png)
+
+### Inverse mapping under certain density function
+
+For certain density function:
+
+![untitled](https://user-images.githubusercontent.com/57780176/124962595-b8d80800-e016-11eb-8675-c08e6cfbdc01.png)
+
+
+If we apply the inverse mapping for system for 20 times:
+
+![inverse_0 02](https://user-images.githubusercontent.com/57780176/124962318-63036000-e016-11eb-82a6-e967f460dde5.gif)
+![invesre2](https://user-images.githubusercontent.com/57780176/124962329-64cd2380-e016-11eb-8412-ebc70773e8f6.gif)
+![invesr3](https://user-images.githubusercontent.com/57780176/124962335-65fe5080-e016-11eb-9d29-7f29164dcffb.gif)
+![inverse4](https://user-images.githubusercontent.com/57780176/124962340-67c81400-e016-11eb-9f53-382bdda2d6ff.gif)
+![Jul-08-2021 18-01-53](https://user-images.githubusercontent.com/57780176/124962512-a067ed80-e016-11eb-9576-68b9e321e9f4.gif)
 
 
 
