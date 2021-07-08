@@ -22,7 +22,7 @@ This is a visualization of standard map with different value of K for Kicked Ham
 
 $\theta_{n+1}=\theta_n+\pi p_n$
 
-$p_{n+1}=p_n+\frac{K}{pi}sin(\theta_n+\pi p_n)$
+$p_{n+1}=p_n+\frac{K}{\pi}sin(\theta_n+\pi p_n)$
 
 ![sm1](/Users/peter/Desktop/2deg_billiard_matlab/graphs/sm1.gif)
 
