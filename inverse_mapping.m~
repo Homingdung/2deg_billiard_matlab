@@ -1,0 +1,30 @@
+function inverse_mapping(K,N)
+%This function is used to calculate the inverse mapping of a system given
+%density function.
+% K - parameter of the kicked system
+% N - number of inverse mapping iterations
+% p - initial p
+% theta - initial theta
+x0=linspace(0,2*pi,250);
+y0=linspace(-1,1,250);
+[X,Y] = meshgrid(x0,y0);
+X0 = X;
+Y0 = Y;
+figure
+a = "Inverse Mapping K=";
+b = num2str(K);
+str = strcat(a,b);
+nframes=10;
+for i = 1:N
+    X1=X0-pi.*(Y0-K.*sin(X0)./pi);
+    Y1=Y0-K.*sin(X0)./pi;
+    X0 = X1;
+    Y0 = Y1;
+    Z=(sin(X1./2).*cos(pi.*Y1./2)).^10;
+    contour(X,Y,Z,10);
+    title("Density function");
+    m(i)=getframe;
+
+end
+movie(m,1)
+end
