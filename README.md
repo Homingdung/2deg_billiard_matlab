@@ -1,6 +1,6 @@
-# 2deg_billiard_matlab
+[Applied Mathematics](https://en.wikipedia.org/wiki/Applied_mathematics) | [Dynamical System](https://en.wikipedia.org/wiki/Dynamical_system) | [Dynamical Billiards](https://en.wikipedia.org/wiki/Dynamical_billiards)
 
-## Introduction
+# Introduction
 This is a funded summer internship project under the supervision of Dr. Martin Richter, University of Nottingham.
 
 **Title**: Transfer operator for the standard map
@@ -15,9 +15,9 @@ This project focuses on dynamical systems like known from lectures about Hamilto
 + Cvitanovic, Predrag, et al. "Chaos: classical and quantum." ChaosBook. org (Niels Bohr Institute, Copenhagen 2005) 69 (2005): 25.
 + Bøggild, Peter, A. Kristensen, and Poul Erik Lindelof. "Magnetic focusing in triangular electron billiards." Physical Review B 59.20 (1999): 13067.
 
-## Kicked system: a brief introduction
+# Kicked system: a brief introduction
 
-### Standard Map
+## Standard Map
 This is a visualization of standard map with different value of K for Kicked Hamiltonian.
 
 $\theta_{n+1}=\theta_n+\pi p_n$
@@ -56,7 +56,7 @@ More pictures are shown here:
 
 ![sm6](https://github.com/Peter3822724/2deg_billiard_matlab/blob/main/graphs/sm6.png)
 
-### Inverse mapping under certain density function
+## Inverse mapping under certain density function
 
 For certain density function:
 
