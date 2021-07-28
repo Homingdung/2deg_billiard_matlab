@@ -8,4 +8,7 @@ Functions used to plot for dynamics of the triangular billiard.
 + standard map of triangular billiard: ```Standard_Map_tri_Plot.m```
 + Birkhoff coordinates calculator: ```tri_billiard2.m```
 + Density function: ```density.m```
-+ transfer operator: ```billiard.m```
++ transfer operator $T^n \rho$: ```billiard.m```
+
+
+
