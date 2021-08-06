@@ -10,7 +10,6 @@ Functions used to plot for dynamics of the triangular billiard.
 + transfer operator $T^n \rho$: ```billiard.m```
 
 
-<img width="629" alt="截屏2021-08-06 下午5 26 25" src="https://user-images.githubusercontent.com/57780176/128542129-8b511a56-e048-4003-ab97-f258bdf1fe11.png">
-
+<img width="629" alt="截屏2021-08-06 下午6 15 47" src="https://user-images.githubusercontent.com/57780176/128548044-f150a5be-3145-4717-ba77-9a2b2d687ed6.png">
 
 
