@@ -34,6 +34,14 @@ $$
 $$
 both $\theta$ and $p$ will take modulo, $2\pi$ and $2$, respectively, which could be used to create a 2D standard map.
 
+
+
+![k=0.4](https://github.com/Homingdung/2deg_billiard_matlab/blob/main/graphs/sm2.gif)
+
+![k=2.4](https://github.com/Homingdung/2deg_billiard_matlab/blob/main/graphs/sm4.gif)
+
+
+
 ## [Poincaré map](https://en.wikipedia.org/wiki/Poincar%C3%A9_map)
 
 In the theory of dynamical systems, a Poincaré map is an intersection of periodic orbits in state space with a certain lower-dimensional subspace, called Poincaré section.
