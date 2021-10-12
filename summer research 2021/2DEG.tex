@@ -60,7 +60,7 @@
 \color{Black}\\[0.4cm] 
 \Large \textbf{Mingdong He}\\
 \Large \textbf{Supervisor: Martin Richter}\\
-\large \textbf{School of Mathematical Sciences, University of Nottingham}\\ 
+%\large \textbf{School of Mathematical Sciences, University of Nottingham}\\ 
 \large \textbf{\Letter \space smymh1@nottingham.ac.uk}\\
 \large \textbf{\faGithub \space 
 https://github.com/Homingdung/2deg\_billiard\_matlab}
@@ -83,11 +83,11 @@ https://github.com/Homingdung/2deg\_billiard\_matlab}
 %----------------------------------------------------------------------------------------
 \section*{Introduction}
 \noindent
-This project is based on an experiment \cite{richterklassischer} as shown in \textbf{FIG. \ref{fig:composite}}: the electrons \cite{boggild1999magnetic} are emitted to a triangular cavity through a narrow hole with a magnetic field and the electrons will collide with the walls of the cavity as billiards. As the electrons leaving will give rise to electric resistance, the graph of how resistance changes with magnetic field indicates a dual peak phenomenon, which seems to match the reflections in cavity. Due to the complexity of the behavior of the electrons in the cavity, it seems that quantum mechanics, randomness, uncertainty, and PDE etc. would be considered to account for this dual peak phenomenon. In order to study this problem from a computational simplicity view, we simplify the problem as 2d electron gases (2DEG) and proposed a 2-dimensional model based on Birkhoff coordinate and transfer operator to reproduce the experiment by using analytical ODE solution and numerical simulations for the dynamics of the billiards.
+This project is based on an experiment \cite{richterklassischer} as shown in \textbf{FIG. \ref{fig:composite}}: electrons \cite{boggild1999magnetic} are emitted into a triangular cavity through a narrow hole. Due to a perpendicular magnetic field, the electrons will move on a circles and collide with the walls of the cavity. Electrons leaving at the bottom will give rise to electric resistance. The graph of how resistance changes with magnetic field indicates a dual peak phenomenon, whose origin we want to understand. Due to the complexity of the behavior of the electrons in the cavity, it seems that quantum mechanics, randomness, uncertainty, and PDE etc. might be considered to account for this dual peak phenomenon. In order to study this problem from a computational simpler view, we describe the problem as 2d electron gases (2DEG) and propose a 2-dimensional model based on Birkhoff coordinates and transfer operator to reproduce the experiment by using analytical ODE solutions and numerical simulations for the dynamics of the billiards.
 
 \begin{center}\vspace{1cm}
-    \includegraphics[width=0.8\linewidth]{composite.png}
-    \captionof{figure}{\textbf{FIG. 1.}} \textbf{a)}The electrons emitted through a narrow hole with an initial distribution. Point reflections happened due to the collision with the walls of cavity. \textbf{b)} The electrons leaving will generate resistance.
+    \includegraphics[width=0.7\linewidth]{composite.png}
+    \captionof{figure}{\textbf{FIG. 1.}} \textbf{a)}{The electrons injected through a narrow hole with an initial distribution. Reflections happened due to the collision with the walls of the cavity. \textbf{b)} The electrons leaving at the bottom will generate resistance.}
     \label{fig:composite}
 %\captionof{figure}{\textbf{NanoJ framework.} Currently NanoJ consists of 5 modules dedicated to super-resolution imaging and analysis.}
 \end{center}%\vspace{1cm}
@@ -99,7 +99,6 @@ This project is based on an experiment \cite{richterklassischer} as shown in \te
 
 \noindent
 We simplify the dynamics of the 2DEG with unit mass in a closed hard wall regular triangle cavity with length 1 for each side, which could be described as an ODE system shown in (1) and a billiard is a Hamiltonian system with potential $V=0$:
-
 \begin{equation}
 \begin{aligned}
 & \frac{dx}{dt}=v_x\\
@@ -111,22 +110,17 @@ We simplify the dynamics of the 2DEG with unit mass in a closed hard wall regula
 & \frac{d v_y}{dt}=-2\sqrt{2}Bv_x-\frac{\partial V}{\partial y}(x,y)=-2\sqrt{2}Bv_x\\
 \end{aligned}
 \end{equation}
-
-The conservation of energy makes the 2-dimensional problem sufficient to consider only 1 parameter for velocity, $p$, the projected momentum on the boundary. We also rescale the parameters and get the value of velocity as $\sqrt{2}$. Thus, the emitting electron could be considered as one from the position $(x_0,y_0)$ with initial velocity $v_0=(\sqrt{2}p,\sqrt{2}\sqrt{1-p^2})$, where $p \in [-1,1]$
-
-Thus, the analytical solution results in orbit due to the magnetic field:
+The conservation of energy makes the 2-dimensional problem sufficient to consider only 1 parameter for velocity, $p$, the projected momentum on the boundary. We also rescale the parameters and get the value of velocity as $\sqrt{2}$. Thus, the emitting electron could be considered as starting from the position $(x_0,y_0)$ with initial velocity $v_0=(\sqrt{2}p,\sqrt{2}\sqrt{1-p^2})$, where $p \in [-1,1]$. Thus, the analytical solution results in orbit due to the magnetic field:
 %analytical solution---------------
-
 \begin{equation}
 \begin{aligned}
 & R=R(B)=\frac{|v_0|}{2\sqrt{2}|B|}\\
 & \omega=-2\sqrt{2}B\\
-& X_{centre}=(x_c,y_c)=(x_0-\frac{v_{y_0}}{\omega},y_0+\frac{v_{x_0}}{\omega})\\
-& \phi=arctan(\frac{y_0-y_c}{x_0-x_c})\\
-& (x(t),y(t))=(x_c+Rcos(\omega t+\phi), y_c+Rsin(\omega t+\phi))\\
+& X_{\mathrm{centre}}=(x_c,y_c)=\left(x_0-\frac{v_{y_0}}{\omega},y_0+\frac{v_{x_0}}{\omega}\right)\\
+& \phi=\arctan\left(\frac{y_0-y_c}{x_0-x_c}\right)\\
+& (x(t),y(t))=\left(x_c+R\cos(\omega t+\phi), y_c+R\sin(\omega t+\phi)\right)\\
 \end{aligned}
 \end{equation}
-
 %nomenclature------------------------
 \begin{tabular}{cccc}
 \toprule
@@ -146,17 +140,11 @@ $(x_c,y_c)$ & orbit centre &&\\
 %	Birkhoff coordinate
 %----------------------------------------------------------------------------------------
 
-Birkhoff coordinate, also known as boundary coordinate, which can be used to define a natural Poincaré section for billiard flow \cite{cvitanovic2020chaos}, specifies the collision point, with which could also be displayed on a phase-space with $(s,p)$, where $s$ is the position along the boundary and $p$ is the projected momentum on the boundary. \textbf{FIG. \ref{fig:composite2}} shows how the reflection occurs. We use a combined coordinate system (Cartesian and Polar) to derive the Birkhoff coordinate $(s,p)$ as shown in \textbf{FIG. \ref{fig:composite2}}.
+Birkhoff coordinates, also known as boundary coordinates, which can be used to define a natural Poincaré section for billiard flows \cite{cvitanovic2020chaos}, specify the collision point. They can be displayed on a phase-space with $(s,p)$, where $s$ is the position along the boundary and $p$ is the projected momentum on the boundary. We use a combined coordinate system (Cartesian and Polar) to derive the Birkhoff coordinate $(s,p)$ as shown in \textbf{FIG. \ref{fig:composite2}}.
 
 \begin{center}\vspace{1cm}
-    \includegraphics[width=0.5\linewidth]{projection2.png}
-    \captionof{figure}{\textbf{FIG. 2.} Trajectories specified by Birkhoff coordinates. The 2DEG collides with the wall and will be reflected, where $\hat{t}$ is the unit tangential vector and $\hat{n}$ is the unit normal vector.}
-    \label{fig:projection2}
-\end{center}%\vspace{1cm}
-
-\begin{center}\vspace{1cm}
-    \includegraphics[width=0.8\linewidth]{composite2.png}
-    \captionof{figure}{\textbf{FIG. 3.} \textbf{a)} The 2DEG is about to collide with the wall $\partial \Omega_1$, $\partial \Omega_2$, $\partial \Omega_3$} \textbf{b)} Birkhoff phace-space.
+    \includegraphics[width=1.0\linewidth]{composite2.png}
+    \captionof{figure}{\textbf{FIG. 2.}} {\textbf{a)} The 2DEG is about to collide with the wall $\partial \Omega_1$, $\partial \Omega_2$, $\partial \Omega_3$ \textbf{b)} Birkhoff phace-space.}
     \label{fig:composite2}
 \end{center}%\vspace{1cm}
 
@@ -167,7 +155,7 @@ Birkhoff coordinate, also known as boundary coordinate, which can be used to def
 %----------------------------------------------------------------------------------------
 
 \noindent
-We define the Poincaré map $M_B$ for the billiard from the $n$th collision to the $(n+1)$st collision to describe the dynamics, which could be found numerically by the following recipes:
+We define the Poincaré map $M_B$ for the billiard from the $n$th collision to the $(n+1)$st collision to describe the dynamics.
 \begin{itemize}
     \item $M_B: (s_n, p_n) \to (s_{n+1},p_{n+1}), n=0, 1, 2...$, $(s,p): (0, 3) \times [-1, 1]$
     \item Set $s_0 \in (0, 1),p_0 \in [-1,1], B>0$
@@ -175,34 +163,34 @@ We define the Poincaré map $M_B$ for the billiard from the $n$th collision to t
 $\partial \Omega_1$:
 \begin{equation}
 \begin{aligned}
-& \theta=\frac{1}{2R}sin^{-1}(\frac{\sqrt{3}}{2}x_c+\frac{\sqrt{3}}{2}-y_c)+\frac{\pi}{3}\\
+& \theta=\frac{1}{2R}\sin^{-1}\left(\frac{\sqrt{3}}{2}x_c+\frac{\sqrt{3}}{2}-y_c\right)+\frac{\pi}{3}\\
 \\
-& s=3-\frac{2}{\sqrt{3}}(y_c+Rsin(\theta))\\
+& s=3-\frac{2}{\sqrt{3}}(y_c+R\sin(\theta))\\
 \\
-& p=\frac{R\omega}{\sqrt{2}}sin(\theta-\frac{\pi}{3})
+& p=\frac{R\omega}{\sqrt{2}}\sin\left(\theta-\frac{\pi}{3}\right)
 \end{aligned}
 \end{equation}
 $\partial \Omega_2$:
 \begin{equation}
 \begin{aligned}
-& \theta=\frac{1}{2R}sin^{-1}(-\frac{\sqrt{3}}{2}x_c+\frac{\sqrt{3}}{2}-y_c)-\frac{\pi}{3}\\
-& s=1+\frac{2}{\sqrt{3}}(y_c+Rsin(\theta))\\
-& p=\frac{R\omega}{\sqrt{2}}sin(\theta+\frac{\pi}{3})
+& \theta=\frac{1}{2R}\sin^{-1}\left(-\frac{\sqrt{3}}{2}x_c+\frac{\sqrt{3}}{2}-y_c\right)-\frac{\pi}{3}\\
+& s=1+\frac{2}{\sqrt{3}}\left(y_c+R\sin(\theta)\right)\\
+& p=\frac{R\omega}{\sqrt{2}}\sin(\theta+\frac{\pi}{3})
 \end{aligned}
 \end{equation}
 
 $\partial \Omega_3$:
 \begin{equation}
 \begin{aligned}
-& s=s_0+2Rcos(\pi-\phi)\\
+& s=s_0+2R\cos(\pi-\phi)\\
 & p=p_0
 \end{aligned}
 \end{equation}
     \item Select the correct point as prediction for $(s_1,p_1)$ by algorithm \textbf{FIG.\ref{flowchat}}, where the $d_1$ $d_2$ $d_3$ is the distance from the centre to the  chord formed by the adjacent reflection points $(s_0,p_0)$ and $(s_1,p_1)$ on each wall, and $R$ is the radius of the orbit.
 
 \begin{center}\vspace{1cm}
-    \includegraphics[width=0.5\linewidth]{flowchat.png}
-    \captionof{figure}{\textbf{FIG. 4.}Algorithm to select the correct collision point}
+    \includegraphics[width=0.7\linewidth]{flowchat2.png}
+    \captionof{figure}{\textbf{FIG. 3.}}{Algorithm to select the correct collision point}
     \label{flowchat}
 \end{center}%\vspace{1cm}
 \item Define an initial density function $\rho^{\delta}_0(s,p)$ and the transfer operator $T^{\alpha}_{\rho}, \alpha=3,9$
@@ -221,12 +209,12 @@ $\partial \Omega_3$:
 \begin{equation}
 \begin{aligned}
 & T^3\rho=\rho \ \circ M^{-1} \circ M^{-1} \circ M^{-1}\\
-& T^9\rho=\rho \ \circ \underbrace{M^{-1} \circ ... \circ M^{-1}}_{9}
+& T^9\rho=\rho \ \circ \underbrace{M^{-1} \circ ... \circ M^{-1}}_{9\times}
 \end{aligned}
 \end{equation}
 \end{itemize}
 
-Assuming that the 2DEG will not collide the walls less than 3 reflections and 9 reflections, respectively, we integrate the transfer operator to get the amount of 2DEG leaving the hole from the $\partial \Omega_3$:
+Assuming crudely that the electrons will not collide with the walls less than 3 reflections and 9 reflections, respectively, we integrate the transfer operator to get the amount of $e^{-}$ leaving at the bottom:
 
 \begin{equation}
 r(B)=\int T^{\alpha}_{\rho} dS=\int_{-1}^{1}\int_{1/2-\delta/2}^{1/2+\delta/2} T^{\alpha}_{\rho} dsd\rho=\Delta s \Delta \rho \sum_{ij} \rho_{\alpha}(s_i,p_j)
@@ -235,7 +223,7 @@ r(B)=\int T^{\alpha}_{\rho} dS=\int_{-1}^{1}\int_{1/2-\delta/2}^{1/2+\delta/2} T
 %	MATLAB simulation
 %----------------------------------------------------------------------------------------
 
-MATLAB simulation could give us the boundary map based on Birkhoff phase-space in \textbf{FIG. \ref{compositeB}} for $B=0.5, 1.1, 1.2$, together with the initial density function with $\delta=0.05, n=2, m=3$. These points are generated by our Poincaré map
+A MATLAB simulation could give us the boundary map based on Birkhoff phase-space in \textbf{FIG. \ref{compositeB}} for $B=0.5, 1.1, 1.2$, together with the initial density function with $\delta=0.05, n=2, m=3$. These points are generated by our Poincaré map
 
 \begin{equation}
 M_B: \{(s_n,p_n)\}=\{M^n_B(s_0,p_0)\}, n=0,1,2...   
@@ -245,14 +233,14 @@ Fixed points can be seen in the phase-space within the triangles and when $s=0.5
 
 \begin{center}\vspace{1cm}
 \includegraphics[width=0.85\linewidth]{compositeB.png}
-\captionof{figure}{\textbf{FIG. 5.} Boundary map for \textbf{a)} $B=0.4$ \textbf{b)} $B=0.5$ \textbf{c)} $B=1.1$ \textbf{d)} $B=1.2$ Bifurcation occurs when increasing the $B$ from 0.4 to 1.2 }
+\captionof{figure}{\textbf{FIG. 4.}} {Boundary map for \textbf{a)} $B=0.4$ \textbf{b)} $B=0.5$ \textbf{c)} $B=1.1$ \textbf{d)} $B=1.2$ Bifurcation occurs when increasing the $B$ from 0.4 to 1.2}
 \label{compositeB}
 \end{center}%\vspace{1cm}
 
 In \textbf{FIG. \ref{compositerho} d)}, it is obvious that the numerical simulation of our model also shows dual peak when $B=1.0$.
 \begin{center}\vspace{1cm}
 \includegraphics[width=0.85\linewidth]{compositerho.png}
-\captionof{figure}{\textbf{FIG. 6.} Boundary map for initial density function and transfer operators. The two vertical lines control the emitting hole. \textbf{a)} initial density function \textbf{b)} transfer operator for 3 reflections \textbf{c)} transfer operator for 9 reflections \textbf{d)} resistance vs magnetic field for different transfer operators. It also indicates that the dual peaks occurs in cavity based on the numerical simulation of our model compared with the \textbf{FIG. 1. b)}.}
+\captionof{figure}{\textbf{FIG. 5.}}{Boundary map for initial density function and transfer operators. The two vertical lines indicate the emitting hole. \textbf{a)} initial density function \textbf{b)} transfer operator for 3 reflections \textbf{c)} transfer operator for 9 reflections \textbf{d)} resistance vs magnetic field for different transfer operators. According to \textbf{Eq.} $(9)$, it also indicates that the dual peaks occur in cavity based on the numerical simulation of our model compared with the \textbf{FIG. 1. b)}.}
 \label{compositerho}
 \end{center}%\vspace{1cm}
 
@@ -262,9 +250,9 @@ In \textbf{FIG. \ref{compositerho} d)}, it is obvious that the numerical simulat
 % %----------------------------------------------------------------------------------------
 \section*{Conclusion}
 \begin{itemize}
-    \item We use our derived transfer operator methods to investigate the dynamics of 2DEG displayed by boundary map.
+    \item We use our derived transfer operator methods to investigate the dynamics of 2DEG displayed by a boundary map.
     \item Numerical simulation indicates a consistence with the experimental result for the dual peak phenomenon by a computationally easy approach without using quantum mechanics, randomness, uncertainty and PDE etc.
-    \item Although the assumption that 2DEG will not collide the walls less than 3 reflections and 9 reflections makes the model computationally easy, it is not true. For instance, the 2DEG could escape the cavity by just one reflections.
+    \item Although the assumption that 2DEG will not collide the walls less than 3 reflections and 9 reflections makes the model computationally easy, it is not true. For instance, the 2DEG could escape the cavity by just one reflection.
     \item Further study could focus on more complete cases for the dynamics of billiards and the bifurcation of boundary map is also worth studying.
 \end{itemize}
 
@@ -274,21 +262,23 @@ In \textbf{FIG. \ref{compositerho} d)}, it is obvious that the numerical simulat
 
 \small
 \nocite{*} % Print all references regardless of whether they were cited in the poster or not
-\bibliographystyle{plain} % Plain referencing style
+\bibliographystyle{unsrt} % unsrt referencing style
 \bibliography{sample} % Use the example bibliography file sample.bib
 
 %----------------------------------------------------------------------------------------
 %	Funding
 %----------------------------------------------------------------------------------------
 \section*{Funded by}
-\begin{center}\vspace{0cm}
-\includegraphics[width=0.95\linewidth]{logo.png}
+\begin{center}\vspace{1cm}
+\includegraphics[width=0.5\linewidth]{logo.png}
 \end{center}%\vspace{1cm}
 
 \section*{Acknowledgement}
 This research internship is supported by the School of Mathematical Sciences, University of Nottingham. I would like to say special thank you to my supervisor Martin Richter for his nice support and guidance, and others who have supported me throughout this internship.
 
-
+%reflection  
+\section*{Reflection}
+During this research internship, I found that I really enjoyed researching, modeling, coding, and writing about a scientific topic. Regular meetings with my supervisor make me aware of how to correctly express my ideas to better solve problems. Time management for a project is also an important skill I learned. Since I want to do a PhD in applied mathematics in the future, this internship is a good try for me.
 %----------------------------------------------------------------------------------------
 
 \end{multicols}
