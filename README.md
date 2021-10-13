@@ -60,6 +60,7 @@ Bifurcation of a system occurs when a small, smooth change in a parameter causes
 
 
 ## Transfer operator
+The problem of propagation in cavities, which is widely seen in wireless communication, semiconductor manufacturing, etc., is most effectively solved by focusing on the boundary in the lower dimensions (e.g., the inner wall of an optical fibre) rather than in the higher dimensions of the interior. That is the reason why we create a mapping for the collision points rather than the specific orbits or the electrons moving in the cavity.
 
 In a simple way, transfer operator could be seen as the behavior of a dynamical system on the mass density of initial conditions. Transfer operators methods have been successfully applied to Dynamical Energy Analysism, which has a wide range of industrial applications. In this research, the transfer operator arises from the equations of motion and can be expressed as an integral over initial conditions.
 
